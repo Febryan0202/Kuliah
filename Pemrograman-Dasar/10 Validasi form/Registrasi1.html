@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Pendaftaran</title>
+    </head>
+
+    <form action="Registrasi1.php" method="post"></form>
+    <main>
+        <H1>Registrasi Lomba Coding</H1>
+
+    <!-- Nama -->
+    <label for="Nama">Nama :</label>
+        <input type="text" id="Nama" name="Nama"> 
+    <br><br>
+
+    <!--Email-->
+    <label for="Email">Email :</label>
+        <input type="email" id="Email" name="Email">
+    <br><br>
+
+    <!--NOMOR HP-->
+    <label for="NomorHP">Nomor HP :</label>
+        <input type="number" name="NomorHP" id="NomorHP">
+    <br><br>
+
+    <!--UMUR-->
+    <label for="Umur">Umur :</label>
+        <input type="number" name="Umur" id="Umur">
+    <br><br>
+
+    <!--URL Repsitory-->
+    <label for="URL">URL Repository :</label>
+        <input type="url" name="URL" id="URL">
+    <br><br>
+
+    <!--Kategori-->
+    <label for="Kategori">Kategori Lomba :</label>
+    <select name="Kategori">
+        <option value="">---Pilih---</option>
+        <option value="Hackaton">Hackaton</option>
+        <option value="Web Developmen">Web Developmen</option>
+        <option value="APP Developmen">APP Developmen</option>
+    </select>
+    <br><br>
+
+    <!--Peserta-->
+    <label for="Peserta">Peserta :</label>
+        <input type="radio" name="Peserta" value="Individu"> Individu
+        <input type="radio" name="Peserta" value="Kelompok"> Kelompok
+    <br><br>
+
+    <!--Button buat submit-->
+    <button type="submit">Kirim</button>
+</main>
+</form>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.30);
+    }
+
+    main h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="url"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+</style>
+</html>
